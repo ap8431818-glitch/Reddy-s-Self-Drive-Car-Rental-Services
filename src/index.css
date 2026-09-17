@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1F2937; /* Deep charcoal */
+  --color-brand-dark: #111827; /* Midnight */
+  --color-brand-light: #FDFBF7; /* Warm ivory / off-white */
+  --color-brand-accent: #D4AF37; /* Premium gold / muted warm accent */
+  --color-brand-accent-light: #F3E5AB; 
+  --color-brand-text: #374151;
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-light text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-brand-dark;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-brand-primary tracking-tight;
+  }
+  
+  /* Custom Scrollbar for a premium feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-primary/20 rounded-full hover:bg-brand-primary/40 transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

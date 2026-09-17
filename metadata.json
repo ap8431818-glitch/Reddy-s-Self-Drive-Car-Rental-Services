@@ -1,0 +1,8 @@
+{
+  "name": "Reddy’s Self Drive Car Rental Services",
+  "description": "Enjoy Your Ride with Our Cars 🚗 • The Best Cars Available At Affordable Prices • We Provide Cars for Self drive •",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
